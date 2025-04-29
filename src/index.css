@@ -1,0 +1,377 @@
+/* ===== Reset and Variables ===== */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #9c88ff;
+  --disabled-color: #adb5bd;
+}
+
+/* ===== Typography ===== */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  height: 100%;
+  background-color: #fff;
+  color: #454545;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin: 0.7rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* ===== Layout ===== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+/* ===== Header & Footer ===== */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
+  width: 100%;
+  background-color: #f1f1f1;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
+  width: 100%;
+  background-color: #f1f1f1;
+  margin-top: auto;
+}
+
+/* ===== Forms ===== */
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #7d5fff;
+}
+
+.btn:disabled {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
+}
+
+.btn.small {
+  width: 48%;
+}
+
+.btn.full {
+  width: 100%;
+}
+
+/* ===== Tables ===== */
+.table-wrapper {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  margin-bottom: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #7d5fff;
+  color: #ffffff;
+  padding: 16px;
+  border: 1px solid #ffffff;
+  min-width: 70px;
+}
+
+td {
+  padding: 16px;
+  border: 1px solid #dee2e6;
+  color: #333;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* ===== Frame Form Table ===== */
+
+.frame-form-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.frame-form-table th,
+.frame-form-table td {
+  border: 1px solid #dee2e6;
+  padding: 12px;
+  text-align: center;
+}
+
+.frame-form-table th {
+  background-color: #7d5fff;
+  color: #fff;
+  border-bottom: none;
+}
+
+.frame-form-table td input {
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 0;
+}
+
+/* ===== Utilities ===== */
+.current-frame {
+  background-color: #ffcc00;
+  font-weight: bold;
+  color: #000;
+  border-radius: 4px;
+}
+
+/* ===== Layout Helpers ===== */
+.inline {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 20px;
+}
+
+.start-game-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+}
+
+.start-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.start-form-container {
+  max-width: 500px;
+  width: 100%;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.start-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.start-subtitle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  .inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-control {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* ===== StartGame Component Styles ===== */
+.start-game-form {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.start-game-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.start-game-section {
+  margin-bottom: 1rem;
+}
+
+.player-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.player-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.round-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.round-options input[type="radio"] {
+  margin-left: 8px;
+}
+
+.intermission-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.results-table-container {
+  padding: 20px;
+  text-align: center;
+}
