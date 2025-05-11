@@ -2,11 +2,11 @@
 
 [![React](https://img.shields.io/badge/React-19.x-blue?logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.x-purple?logo=vite)](https://vitejs.dev/)
-![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-A simple React + Vite application for keeping track of bowling game scores.
-
-This project was created during a front-end development course to practice React development, state management, and game logic implementation.
+Bowling Score Keeper is a React + Vite web application for tracking bowling scores for multiple players in real time. It was built as part of a front-end development course to learn React by creating a real scoring system for a bowling game.
 
 > ℹ️ This version was re-uploaded for personal use and further development.  
 > The original team project with full commit history is available here:  
@@ -20,7 +20,22 @@ This project was created during a front-end development course to practice React
 - Apply bonus points for strikes and spares
 - Correctly handle special rules for the 10th frame
 - Real-time score updates and winner declaration
+- Export final results as a PDF
 - Responsive and user-friendly interface
+
+## 📸 Screenshots
+
+<h3 align="center">Menu</h3>
+
+![Setup](assets/setup.png)
+
+<h3 align="center">Gameplay</h3>
+
+![Scoreboard](assets/scoreboard.png)
+
+<h3 align="center">Results</h3>
+
+![Final Results](assets/results.png)
 
 ## 🧰 Stack
 
