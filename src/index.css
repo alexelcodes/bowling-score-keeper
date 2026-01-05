@@ -190,7 +190,6 @@ tr:nth-child(odd) {
 }
 
 /* ===== Frame Form Table ===== */
-
 .frame-form-table {
   width: 100%;
   border-collapse: collapse;
@@ -238,6 +237,7 @@ tr:nth-child(odd) {
   margin-top: 20px;
 }
 
+/* ===== Start Game ===== */
 .start-game-wrapper {
   display: flex;
   flex-direction: column;
@@ -319,7 +319,7 @@ tr:nth-child(odd) {
   }
 }
 
-/* ===== StartGame Component Styles ===== */
+/* ===== StartGame Component ===== */
 .start-game-form {
   display: flex;
   justify-content: center;
@@ -374,4 +374,62 @@ tr:nth-child(odd) {
 .results-table-container {
   padding: 20px;
   text-align: center;
+}
+
+/* ===== Print (Save as PDF) ===== */
+@media print {
+
+  .no-print,
+  .header,
+  .footer {
+    display: none !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+
+  .print-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .container {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  .table-wrapper {
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  table,
+  tr,
+  td,
+  th {
+    page-break-inside: avoid;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 12mm;
 }

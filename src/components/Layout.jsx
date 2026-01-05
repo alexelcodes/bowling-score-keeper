@@ -5,9 +5,15 @@ import { Footer } from "./Footer";
 export const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <div className="no-print">
+        <Header />
+      </div>
+
       <main className="main-content">{children}</main>
-      <Footer />
+
+      <div className="no-print">
+        <Footer />
+      </div>
     </>
   );
 };
